@@ -1,0 +1,5 @@
+test/
+.github/
+*.log
+.DS_Store
+INTERFACES.md

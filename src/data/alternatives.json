@@ -1,0 +1,234 @@
+{
+  "moment": {
+    "name": "date-fns",
+    "reason": "Modular, tree-shakeable, smaller bundle; moment is in maintenance mode"
+  },
+  "moment-timezone": {
+    "name": "date-fns-tz",
+    "reason": "Works with date-fns, tree-shakeable, smaller footprint"
+  },
+  "request": {
+    "name": "got",
+    "reason": "request is deprecated; got is actively maintained with modern API"
+  },
+  "request-promise": {
+    "name": "got",
+    "reason": "request-promise is deprecated; got supports promises natively"
+  },
+  "request-promise-native": {
+    "name": "got",
+    "reason": "Deprecated with request; got is the modern replacement"
+  },
+  "lodash": {
+    "name": "es-toolkit",
+    "reason": "Modern, tree-shakeable, TypeScript-first; many lodash utils are now native JS"
+  },
+  "underscore": {
+    "name": "es-toolkit",
+    "reason": "Largely superseded by native JS and modern utility libraries"
+  },
+  "express": {
+    "name": "fastify",
+    "reason": "5x faster, built-in schema validation, better plugin system"
+  },
+  "chalk": {
+    "name": "picocolors",
+    "reason": "2x faster, 14x smaller, no dependencies; chalk moved to ESM-only"
+  },
+  "colors": {
+    "name": "picocolors",
+    "reason": "colors had a supply-chain incident; picocolors is safer and smaller"
+  },
+  "axios": {
+    "name": "ky",
+    "reason": "Built on native fetch, smaller bundle, modern API"
+  },
+  "node-fetch": {
+    "name": "built-in fetch",
+    "reason": "Node 18+ includes native fetch(); no extra dependency needed"
+  },
+  "cross-fetch": {
+    "name": "built-in fetch",
+    "reason": "Node 18+ includes native fetch(); no polyfill needed"
+  },
+  "isomorphic-fetch": {
+    "name": "built-in fetch",
+    "reason": "Node 18+ includes native fetch(); no polyfill needed"
+  },
+  "uuid": {
+    "name": "crypto.randomUUID",
+    "reason": "Node 19+ and all modern browsers have crypto.randomUUID() built-in"
+  },
+  "ora": {
+    "name": "nanospinner",
+    "reason": "5x smaller, similar API, CommonJS compatible"
+  },
+  "inquirer": {
+    "name": "@inquirer/prompts",
+    "reason": "Official successor, modular, smaller install size"
+  },
+  "commander": {
+    "name": "citty",
+    "reason": "Lighter weight, modern API — though commander is still well-maintained"
+  },
+  "yargs": {
+    "name": "citty",
+    "reason": "Lighter, modern API; yargs has a large dependency tree"
+  },
+  "minimist": {
+    "name": "mri",
+    "reason": "Faster, maintained successor with same API"
+  },
+  "glob": {
+    "name": "fast-glob",
+    "reason": "2-3x faster, supports modern glob patterns"
+  },
+  "rimraf": {
+    "name": "fs.rm",
+    "reason": "Node 14+ has fs.rm with { recursive: true, force: true } built-in"
+  },
+  "mkdirp": {
+    "name": "fs.mkdir",
+    "reason": "Node 10+ has fs.mkdirSync/fs.mkdir with { recursive: true } built-in"
+  },
+  "del": {
+    "name": "fs.rm",
+    "reason": "Node 14+ has fs.rm with { recursive: true, force: true } built-in"
+  },
+  "body-parser": {
+    "name": "express.json()",
+    "reason": "Built into Express 4.16+; no separate install needed"
+  },
+  "dotenv": {
+    "name": "node --env-file",
+    "reason": "Node 20.6+ supports --env-file flag natively"
+  },
+  "nodemon": {
+    "name": "node --watch",
+    "reason": "Node 18.11+ has built-in --watch mode for development"
+  },
+  "ts-node": {
+    "name": "tsx",
+    "reason": "Faster, uses esbuild under the hood, better ESM support"
+  },
+  "tslint": {
+    "name": "eslint",
+    "reason": "TSLint is deprecated; ESLint with typescript-eslint is the standard"
+  },
+  "babel-eslint": {
+    "name": "@babel/eslint-parser",
+    "reason": "babel-eslint is deprecated; use the official @babel scoped package"
+  },
+  "left-pad": {
+    "name": "String.padStart",
+    "reason": "Built into JavaScript since ES2017; no dependency needed"
+  },
+  "is-number": {
+    "name": "Number.isFinite",
+    "reason": "Built into JavaScript; one-liner replacement"
+  },
+  "is-promise": {
+    "name": "instanceof Promise",
+    "reason": "Native check works in all modern environments"
+  },
+  "is-regexp": {
+    "name": "instanceof RegExp",
+    "reason": "Native check; no package needed"
+  },
+  "is-plain-object": {
+    "name": "structuredClone or manual check",
+    "reason": "Simple utility easily inlined; no package needed"
+  },
+  "classnames": {
+    "name": "clsx",
+    "reason": "Same API, 40% smaller, faster"
+  },
+  "object-assign": {
+    "name": "Object.assign or spread",
+    "reason": "Built into JavaScript since ES2015; no polyfill needed"
+  },
+  "array-flatten": {
+    "name": "Array.flat",
+    "reason": "Built into JavaScript since ES2019; no package needed"
+  },
+  "bluebird": {
+    "name": "native Promise",
+    "reason": "Native Promises now have good performance; async/await is standard"
+  },
+  "q": {
+    "name": "native Promise",
+    "reason": "Q is unmaintained; native Promises replaced it entirely"
+  },
+  "async": {
+    "name": "native Promise methods",
+    "reason": "Promise.all, Promise.allSettled, for-await-of cover most async patterns now"
+  },
+  "superagent": {
+    "name": "got",
+    "reason": "got is more actively maintained with a modern API"
+  },
+  "needle": {
+    "name": "built-in fetch",
+    "reason": "Node 18+ includes native fetch(); simpler than needle"
+  },
+  "winston": {
+    "name": "pino",
+    "reason": "5x faster, lower overhead, better for production"
+  },
+  "bunyan": {
+    "name": "pino",
+    "reason": "Pino is the spiritual successor; faster and actively maintained"
+  },
+  "log4js": {
+    "name": "pino",
+    "reason": "Pino is faster and more modern; log4js has a large footprint"
+  },
+  "mocha": {
+    "name": "vitest",
+    "reason": "Faster, built-in coverage, ESM-native, great DX"
+  },
+  "jasmine": {
+    "name": "vitest",
+    "reason": "Modern test runner with better performance and ecosystem integration"
+  },
+  "karma": {
+    "name": "vitest",
+    "reason": "Karma is deprecated; Vitest handles browser testing via Playwright"
+  },
+  "jest": {
+    "name": "vitest",
+    "reason": "API-compatible drop-in, faster via Vite, better ESM support"
+  },
+  "enzyme": {
+    "name": "@testing-library/react",
+    "reason": "Enzyme is unmaintained; Testing Library is the React team's recommendation"
+  },
+  "bower": {
+    "name": "npm",
+    "reason": "Bower is deprecated; npm/yarn/pnpm replaced it entirely"
+  },
+  "gulp": {
+    "name": "npm scripts or Vite",
+    "reason": "Task runners largely replaced by npm scripts and modern bundlers"
+  },
+  "grunt": {
+    "name": "npm scripts or Vite",
+    "reason": "Grunt is legacy; npm scripts or modern build tools are simpler"
+  },
+  "webpack": {
+    "name": "Vite",
+    "reason": "10-100x faster dev builds, simpler config, growing ecosystem"
+  },
+  "parcel": {
+    "name": "Vite",
+    "reason": "Vite has broader ecosystem support and faster HMR"
+  },
+  "rollup": {
+    "name": "tsup",
+    "reason": "tsup wraps esbuild+rollup with zero-config for library bundling"
+  },
+  "tsd": {
+    "name": "vitest typecheck",
+    "reason": "Vitest includes built-in type testing; no separate tool needed"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "depscope",
+  "version": "1.0.0",
+  "description": "Health check for your npm dependencies — find abandoned, bloated, and declining packages",
+  "main": "src/index.js",
+  "bin": {
+    "depscope": "bin/depscope.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "npm",
+    "dependencies",
+    "security",
+    "javascript",
+    "nodejs",
+    "cli",
+    "developer-tools",
+    "package-health",
+    "dependency-check",
+    "npm-audit"
+  ],
+  "author": "Wittlesus",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wittlesus/depscope"
+  },
+  "homepage": "https://github.com/Wittlesus/depscope",
+  "dependencies": {
+    "commander": "^13.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
