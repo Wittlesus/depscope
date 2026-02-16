@@ -1,5 +1,8 @@
 # DepScope
 
+[![npm version](https://img.shields.io/npm/v/depscope.svg)](https://www.npmjs.com/package/depscope)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Your `package.json` has 47 dependencies. How many are abandoned?**
 
 DepScope is a zero-config CLI that scans your npm dependencies and gives each one a health score based on maintenance activity, download trends, bundle size, and known vulnerabilities. Find the dead weight before it finds you.
@@ -162,8 +165,10 @@ When you use the `--fix` flag, DepScope suggests modern alternatives for problem
 
 ## Related Tools
 
-- **[RulesForge](https://github.com/Wittlesus/rulesforge)** — Using AI coding tools? Generate better rules for Cursor, Copilot, and Claude Code.
-- **[ScopeGuard](https://github.com/Wittlesus/scopeguard)** — Prevent AI scope creep with automated boundary enforcement.
+- **[RulesForge](https://github.com/Wittlesus/rulesforge)** — Auto-generate AI coding rules for any codebase
+- **[ScopeGuard](https://github.com/Wittlesus/scopeguard)** — Prevent AI scope creep with session tracking
+- **[mcp-shipkit](https://github.com/Wittlesus/mcp-shipkit)** — Scaffold MCP servers for Claude Desktop in minutes
+- **[MyUru](https://github.com/Wittlesus/myuru)** — Orchestrate multiple AI agents working in parallel
 
 ## License
 
